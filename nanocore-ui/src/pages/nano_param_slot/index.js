@@ -1,4 +1,4 @@
-import nano_param_slot from "./src/nano_param_slot";
+import nano_param_slot from "./src/nano_param_slot.vue";
 
 nano_param_slot.install = function(Vue) {
   Vue.component(nano_param_slot.name, nano_param_slot);

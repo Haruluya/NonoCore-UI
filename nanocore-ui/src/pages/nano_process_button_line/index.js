@@ -1,4 +1,4 @@
-import nano_process_button_line from "./src/nano_process_button_line";
+import nano_process_button_line from "./src/nano_process_button_line.vue";
 
 nano_process_button_line.install = function(Vue) {
   Vue.component(nano_process_button_line.name, nano_process_button_line);

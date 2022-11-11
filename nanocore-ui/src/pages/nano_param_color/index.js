@@ -1,4 +1,4 @@
-import nano_param_color from "./src/nano_param_color";
+import nano_param_color from "./src/nano_param_color.vue";
 
 nano_param_color.install = function(Vue) {
   Vue.component(nano_param_color.name, nano_param_color);

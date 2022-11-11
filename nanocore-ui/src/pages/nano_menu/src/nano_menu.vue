@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
     <div class="CompContainer" >
         <nav :class="{'nav':true, 'active':active}" ref="nav">
             <div class="container">
@@ -81,7 +81,7 @@
 <script>
 
 
-import logo from '_assets/images/Logo.png'
+import logo from '../../../assets/images/Logo.png'
 export default {
     name: "nano_menu",
     data() {

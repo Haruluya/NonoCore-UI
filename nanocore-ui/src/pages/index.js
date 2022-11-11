@@ -49,20 +49,20 @@ const components = [
 
 
 
-const nano_install = function(Vue) {
+const install = function(Vue) {
   components.map((component) => Vue.component(component.name, component));
 };
 
 
 
 if (typeof window !== "undefined" && window.Vue) {
-    nano_install(window.Vue);
+    install(window.Vue);
 }
 
 
 
 export {
-    nano_install,
+    install,
     nano_button,
     nano_menu,
     nano_slider,
@@ -87,7 +87,7 @@ export {
 
 
 export default {
-    nano_install,
+    install,
     nano_button,
     nano_menu,
     nano_slider,

@@ -1,4 +1,4 @@
-import nano_webgl_des_panel from "./src/nano_webgl_des_panel";
+import nano_webgl_des_panel from "./src/nano_webgl_des_panel.vue";
 
 nano_webgl_des_panel.install = function(Vue) {
   Vue.component(nano_webgl_des_panel.name, nano_webgl_des_panel);

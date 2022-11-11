@@ -23,7 +23,7 @@
     </div>
 </template>
 <script>
-import AnimEvent from "_plugins/anim-event/anim-event.min.js"
+import AnimEvent from "../../../assets/scripts/anim-event.min.js"
 export default {
     name:"nano_param_slider_vectorn",
     data() {

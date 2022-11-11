@@ -27,7 +27,7 @@
     </div>
 </template>
 <script>
-import logo from '_assets/images/Logo.png'
+import logo from '../../../assets/images/Logo.png'
 import nano_param_slot from '../../nano_param_slot';
 
 

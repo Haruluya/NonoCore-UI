@@ -28,7 +28,7 @@
 </template>
 <script>
 
-import coreImg from "_assets/images/logos/CoreWidget.png" 
+import coreImg from "../../../assets/images/logos/CoreWidget.png" 
 
 export default {
     name: "nano_webgl_des_panel",

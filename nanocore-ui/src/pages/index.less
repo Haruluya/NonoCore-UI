@@ -1,0 +1,115 @@
+/* global*/
+
+
+// me
+@min768: ~"(min-width: 768px)";
+@min992: ~"(max-width: 992px)";
+
+
+// z-index.
+@zTop:100;
+
+
+
+
+// Fontsize.
+.caclFontSize(@fontSizeVW){
+    @VW: @fontSizeVW*.6;
+    @PX: 10;
+    font-size: calc(~"@{VW}vw" + ~"@{PX}px") ;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select:none;
+}
+
+a {
+	text-decoration: none; 
+	outline: none;	
+	color: #000;	
+}
+
+
+
+
+/*Text.*/
+span{
+    font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
+    mask: radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
+    mask-size: 10000%;
+    animation: textShow 3s;
+
+}
+
+
+
+
+
+
+/* 滚动槽 */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.08);
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: rgba(242, 238, 238, 0);
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+//header.
+#headerTheme(){
+    navBgColor:#111111;
+    navBorderColor:#ffda16;
+    navHoverColor:#ffda16;
+    mobileMenuBgColor: #1f1f1f;
+    mobileMenuNavColor: #ffffff;
+    mobileMenuLogoTitleColor: #ffffff;
+    mobileMenuFooterColor:#ffffff;
+    mobileMenuFooterLinksBgColor:#f7f8fc;
+    dropdownMenuBgColor: #f9f9f9;
+    dropdownMenuBorderColor:#575757a0;
+    dropdownMenuLogoTitleColor:#000000;
+    dropdownMenuTabBgColor:#f3f3f3;
+    dropdownMenuItemHoverColor:#e6e6e6;
+}
+
+
+@keyframes opacityShow {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+@keyframes textShow {
+    from{
+        mask-size: 100%;
+    }
+    to{
+        mask-size: 10000%;
+    }
+}
+
+@keyframes transformToRight {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}

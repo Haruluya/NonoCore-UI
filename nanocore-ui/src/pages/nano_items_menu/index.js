@@ -1,4 +1,4 @@
-import nano_items_menu from "./src/nano_items_menu";
+import nano_items_menu from "./src/nano_items_menu.vue";
 
 nano_items_menu.install = function(Vue) {
   Vue.component( nano_items_menu.name,  nano_items_menu);

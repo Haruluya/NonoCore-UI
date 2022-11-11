@@ -1,4 +1,4 @@
-import nano_param_slider from "./src/nano_param_slider";
+import nano_param_slider from "./src/nano_param_slider.vue";
 
 nano_param_slider.install = function(Vue) {
   Vue.component(nano_param_slider.name, nano_param_slider);

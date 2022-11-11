@@ -1,5 +1,5 @@
 
-import nano_totop_button from "./src/nano_totop_button";
+import nano_totop_button from "./src/nano_totop_button.vue";
 
 nano_totop_button.install = function(Vue) {
   Vue.component(nano_totop_button.name, nano_totop_button);

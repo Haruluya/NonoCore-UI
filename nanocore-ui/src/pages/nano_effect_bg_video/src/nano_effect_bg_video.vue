@@ -17,7 +17,7 @@
     </div>
 </template>
 <script>
-import nanocorePv3 from "_assets/videos/pv3.mp4"
+import nanocorePv3 from "../../../assets/videos/pv3.mp4"
 
 
 export default {

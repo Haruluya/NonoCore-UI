@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
     <div class="compContainer" 
         :style="{backgroundImage: 'url('+SliderBG+')', backgroundSize: 'cover' }">
         <div class="sliderContainer">
@@ -23,7 +23,7 @@
     </div>
 </template>
 <script>
-import ImgResource from '@/utils/ImgResource';
+import ImgResource from '../../../assets/scripts/ImgResource';
 
 export default {
     name:"nano_slider",

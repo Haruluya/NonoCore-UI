@@ -56,8 +56,8 @@
     </div>
 </template>
 <script>
-import nano_param_panel from '..';
-import logo from '_assets/images/logo-glod.png'
+
+import logo from '../../../assets/images/logo-glod.png'
 
 
 export default {
@@ -106,7 +106,7 @@ export default {
 
         }
     },
-    components: { nano_param_panel }
+
 }
 </script>
 <style lang="less" scoped>
