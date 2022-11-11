@@ -11,7 +11,7 @@ https://haruluya.github.io/Rock-sugar
 
 
 
-![NANOCOREUI](./Document/Images/Logo.png)
+![NANOCOREUI](../Document/Images/Logo.png)
 
 ### Usage
 
