@@ -1,0 +1,114 @@
+@import "../../index.less";
+.CompContainer{
+    width: 100vw;
+    height: 20vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+.logo{
+    width: 15%;
+    text-align: right;
+    padding-right: .5%;
+}
+
+img{
+    width: 50%;
+    min-width: 50px;
+}
+
+.line{
+    width: 6px;
+    height: 30%;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
+
+.title{
+    width: 19%;
+    .caclFontSize(3);
+    min-width: 170px;
+    font-weight:bold;
+    color: white;
+    text-align: left;
+    margin-left: 2vw;
+    text-shadow: 1px 1px 2px rgb(117, 117, 117);
+}
+
+.menuBt{
+    width: 4%;
+    position: relative;
+    margin-top: .7%;
+}
+
+.menu{
+    position: absolute;
+    top: 100%;
+    left: -80%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #292929;
+    max-height: 0;
+    font-size: 0;
+    svg{
+        transform: scale(1) rotateZ(0deg);
+    }
+    transition: all .5s ease;
+    .border{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: .8vw;
+        width: 300px;
+        background-color: #00a0ba;
+    }
+    .menuItem{
+        width: 10vw;
+        height: 2vw;
+        margin: 3px 0;
+        min-width: 60px;
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .menuItem:hover{
+        background-color: #444444;
+        color: white;
+    }
+
+}
+
+.menuBt:hover{
+    svg{
+        cursor: pointer;
+        transform: scale(1.1) rotateZ(-90deg);
+        transition: all .5s ease-in-out;
+        filter: invert(47%) sepia(48%) saturate(979%) hue-rotate(150deg) brightness(98%) contrast(106%);
+    }
+    .menu{
+        max-height: 20vw;
+        padding: 8px 15px;
+        padding-top: 20px;
+        .caclFontSize(.9);
+        font-weight: bold;
+    }
+}
+
+
+@media @min992{
+    .title{
+        font-size: 24px;
+    }
+    .menu{
+        transform: translateX(-10px);
+    }
+}

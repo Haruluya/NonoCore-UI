@@ -1,0 +1,22 @@
+{
+	"Vue3UI": {
+		"scope": "vue",
+		"prefix": "Vue3UI",
+		"body": [
+			"<template>",
+			"\t<div class='CompContainer'>" ,
+				
+			"\t</div>",
+			"</template>",
+			"<script>",
+			"export default {",
+				"\tname:'nano_widget_menu_tab'",
+			"}",
+			"</script>",
+			"<style lang='less' scoped>",
+			"@import './nano_widget_menu_tab.less';",
+			"</style>"
+		],
+		"description": "vue template for nanocore-ui."
+	}
+}

@@ -38,11 +38,13 @@ a {
 /*Text.*/
 span{
     font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;;
-    mask: radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
-    mask-size: 10000%;
-    animation: textShow 3s;
-
-}
+    mask:radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
+    -webkit-mask: radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
+    mask-size: 10000% ;
+    -webkit-mask-size: 10000% ;
+    animation: textShow 3s ;
+  
+  }
 
 
 
@@ -96,14 +98,18 @@ span{
 }
 
 
-@keyframes textShow {
+
+  
+  @keyframes textShow {
     from{
-        mask-size: 100%;
+        mask-size: 100% ;
+        -webkit-mask-size:100% ;
     }
     to{
-        mask-size: 10000%;
+        mask-size: 10000% ;
+        -webkit-mask-size:10000%;
     }
-}
+  }
 
 @keyframes transformToRight {
     from{

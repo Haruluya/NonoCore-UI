@@ -25,7 +25,7 @@
 <script>
 import nano_param_color from '../../nano_param_color';
 import nano_param_slider_vectorn from '../../nano_param_slider_vectorn';
-
+import uiSetter from './uiSetter';
 export default {
     name: "nano_param_widget",
     props: {
@@ -54,17 +54,17 @@ export default {
         this.$nextTick(()=>{
             const widget = this.prop_ui_data;
             if (widget.type === "slider"){
-                haruluya_webgl_utils.setupSlider(
+                uiSetter.setupSlider(
                     this.$refs.widget, 
                     { value: widget.value, slide: widget.callback, max: widget.max, min: widget.min }
                 );
             }else if (widget.type === "color"){
-                haruluya_webgl_utils.setupColorInput(
+                uiSetter.setupColorInput(
                     this.$refs.widget,
                     {callback:widget.callback}
                 )
             }else if (widget.type === "slider-vector"){
-                haruluya_webgl_utils.setupSliderVector(
+                uiSetter.setupSliderVector(
                     this.$refs.widget,
                     {callback:widget.callback}
                 )
